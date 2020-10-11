@@ -1,8 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Josefin+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Josefin+Slab&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 body {
@@ -16,7 +21,35 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 80px, 0;
-    background-color: linear-gradient(#7f8688, #929d9e);
+    padding: 90px, 0;
+    background-color: linear-gradient(to bottom right, #7f8688, #929d9e);
 
 }
+
+.container {
+    width: 85%;
+    height: auto;
+    max-width: 1200px;
+    margin: 0, auto;
+}
+
+.name {
+    text-align: center;
+    font-size: 3rem;
+    color: #fb9039;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fb9039;
+    border-radius: 3px;
+    }
+form input {
+    width: 100%;
+    background-color: transparent;
+    padding: 8px;
+    border: none;
+    }
