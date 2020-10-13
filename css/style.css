@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Josefin+Slab&display=swap');
- *{
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+ *{ 
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -21,8 +21,8 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 90px, 0;
-    background-color: #7f8688;
+    padding: 110px, 0;
+    background-color: #6B7A8F;
  
 }
 
@@ -36,7 +36,8 @@ section {
 .name {
     text-align: center;
     font-size: 3rem;
-    color: #fb9039;
+    color: #F7C331;
+    margin-top: 20px; 
     margin-bottom: 20px;
 }
 
@@ -44,7 +45,7 @@ form {
     width: 80%;
     max-width: 600px;
     margin: 20px auto;
-    background-color: #fb9039;
+    background-color: #F7C331;
     border-radius: 3px;
     }
 form input {
@@ -52,12 +53,14 @@ form input {
     background-color: transparent;
     padding: 8px;
     border: none;
+    display: inline-block;
     }
 
-search-outcome {
-     margin: 60px;
+.search-outcome {
+     margin-top: 60px;
      width: 100%;
      display: grid;
      grid-gap: 20px;
-     grid-template: auto / repeat(auto-fit, minmax(250px, 1fr));
+     grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
 }
+
