@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Oswald&display=swap');
  *{ 
     padding: 0;
     margin: 0;
@@ -11,7 +11,7 @@ img {
 }
 
 body {
-    font-family: 'Amatic+SC';
+    font-family: 'Oswald', sans-serif;
     font-size: 10px;
 }
 
@@ -23,7 +23,6 @@ section {
     justify-content: center;
     padding: 110px, 0;
     background-color: #00303F;
- 
 }
 
 .container {
@@ -34,8 +33,9 @@ section {
 }
 
 .name {
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: 2px;
     text-align: center;
-    text-transform: uppercase;
     font-size: 3rem;
     color: #CAE4DB;
     padding-bottom: 40px;
@@ -76,6 +76,7 @@ section {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    padding: 0;
     background: #CAE4DB;
     display: flex;
     justify-content: center;
