@@ -124,11 +124,11 @@ a {
     text-align: center;
     text-decoration: none;
     width: 140px; 
-    padding: 5px 0;
+    padding: 0px;
     font-size: 18px;
     background-color: #CAE4DB;
     color: #00303F;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .item-info {
