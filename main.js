@@ -4,7 +4,7 @@ const container = document.querySelector('.container');
 let searchQuery = '';
 
 
-searchFormDiv.addEventListener('submit', (a) => {
+searchBoxDiv.addEventListener('submit', (a) => {
     e.preventDefault();
     searchQuery = e.target.querySelector('input').value;
     console.log(searchQuery)
