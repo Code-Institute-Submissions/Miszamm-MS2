@@ -24,17 +24,17 @@ function generateHTML(results){
     results.map(result => {
         generatedHTML +=
         ` <div class="item">
-            <img src="img/ms2-photo.jpg" alt="">
+            <img src="${result.recipe.image}" alt="">
              <div class="flex-container">
-              <h2 class="recipe-name">This is...</h2>
+              <h2 class="recipe-name">${result.recipe.label}</h2>
              <a href="#">See Recipe</a>
           </div>
-         <p class="item-info">Estimated Cal: </p>
-         <p class="item-info">Makronutrients:
+         <p class="item-info">Estimated Cal:${result.recipe.calories.toFixed(0)}</p>
+         <p class="item-info">Makronutrients:${result.recipe.totalNutrients}
           <ul>
-           <li>Carbohydrates</li>
-           <li>Protein</li>
-           <li>Fats</li>
+           <li class="item-info-data">Carbohydrates:</li>
+           <li class="item-info-data">Protein:</li>
+           <li class="item-info-data">Fats:</li>
           </ul>
          </p>
         </div>
