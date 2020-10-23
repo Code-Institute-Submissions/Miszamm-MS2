@@ -27,14 +27,14 @@ function generateHTML(results){
             <img src="${result.recipe.image}" alt="">
              <div class="flex-container">
               <h2 class="recipe-name">${result.recipe.label}</h2>
-             <a href="#">See Recipe</a>
+             <a class="see-recipe" href="${result.recipe.url}" target="_blank">See Recipe</a>
           </div>
-         <p class="item-info">Estimated Cal:${result.recipe.calories.toFixed(0)}</p>
-         <p class="item-info">Makronutrients:${result.recipe.totalNutrients}
+         <p class="item-info">Estimated Cal: ${result.recipe.calories.toFixed(0)}</p>
+         <p class="item-info">Makronutrients: ${result.recipe.totalNutrients}
           <ul>
-           <li class="item-info-data">Carbohydrates:</li>
-           <li class="item-info-data">Protein:</li>
-           <li class="item-info-data">Fats:</li>
+           <li class="item-info-data">Carbohydrates: ${result.recipe.totalNutrients.SUGAR}</li>
+           <li class="item-info-data">Protein: ${result.recipe.totalNutrients.PROCNT}</li>
+           <li class="item-info-data">Fats: ${result.recipe.totalNutrients.FAT.label}</li>
           </ul>
          </p>
         </div>

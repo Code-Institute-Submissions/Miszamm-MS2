@@ -52,7 +52,7 @@ section {
     padding: 10px;   
 }
 
-.search-box:hover > .search-txt {
+ .search-box:hover > .search-txt {
     width: 240px;
     padding: 0 6px;
 }
@@ -120,7 +120,7 @@ section {
     font-size: 24px;
 }
 
-a {
+.see-recipe {
     text-align: center;
     text-decoration: none;
     width: 140px; 
