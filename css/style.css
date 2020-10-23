@@ -42,12 +42,14 @@ section {
     margin-top: 20px; 
 }
 
+
  .search-box {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
     background: #CAE4DB;
     height: 40px;
+    font-size: 18px;
     border-radius: 40px;
     padding: 10px;   
 }
@@ -71,20 +73,24 @@ section {
 }
 
  a .search-btn {
-    color: #7A9D96;
     float: right;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     padding: 0;
     background: #CAE4DB;
+    font-size: 16px;
     display: flex;
+    color: #00303F;
     justify-content: center;
     align-items: center;
     transition: 0.4s;
 }
 
-
+.fa-search:before {
+    background-color: transparent;
+    color: #00303F;
+}
 
 .search-outcome {
      margin-top: 60px;
@@ -124,6 +130,7 @@ section {
     text-align: center;
     text-decoration: none;
     width: 140px; 
+    border-radius: 40px;
     padding: 0px;
     font-size: 18px;
     background-color: #CAE4DB;

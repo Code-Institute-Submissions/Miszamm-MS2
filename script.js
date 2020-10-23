@@ -13,7 +13,7 @@ searchForm.addEventListener('submit', (e) => {
 });
 
 async function fetchAPI(){
-const baseURL = `https://api.edamam.com/search?q=cake&app_id=${APP_ID}&app_key=${APP_key}&to=20`;
+const baseURL = `https://api.edamam.com/search?q=${searchQuery}&app_id=${APP_ID}&app_key=${APP_key}&to=40`;
 const response = await fetch(baseURL);
 const data = await response.json();
 generateHTML(data.hits);
@@ -30,11 +30,11 @@ function generateHTML(results){
              <a class="see-recipe" href="${result.recipe.url}" target="_blank">See Recipe</a>
           </div>
          <p class="item-info">Estimated Cal: ${result.recipe.calories.toFixed(0)}</p>
-         <p class="item-info">Makronutrients: ${result.recipe.totalNutrients}
+         <p class="item-info">Makronutrients:
           <ul>
-           <li class="item-info-data">Carbohydrates: ${result.recipe.totalNutrients.SUGAR}</li>
-           <li class="item-info-data">Protein: ${result.recipe.totalNutrients.PROCNT}</li>
-           <li class="item-info-data">Fats: ${result.recipe.totalNutrients.FAT.label}</li>
+           <li class="item-info-data">Carbohydrates: ${result.recipe.totalNutrients.CHOCDF.quantity.toFixed(1)}</li>
+           <li class="item-info-data">Proteins: ${result.recipe.totalNutrients.PROCNT.quantity.toFixed(1)}</li>
+           <li class="item-info-data">Fats: ${result.recipe.totalNutrients.FAT.quantity.toFixed(1)}</li>
           </ul>
          </p>
         </div>
