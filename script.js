@@ -20,6 +20,7 @@ generateHTML(data.hits);
 console.log(data);
 };
 function generateHTML(results){
+    container.classList.remove('intro')
     let generatedHTML = '';
     results.map(result => {
         generatedHTML +=
