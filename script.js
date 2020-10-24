@@ -29,14 +29,14 @@ function generateHTML(results){
               <h2 class="recipe-name">${result.recipe.label}</h2>
              <a class="see-recipe" href="${result.recipe.url}" target="_blank">See Recipe</a>
           </div>
-         <p class="item-info">Estimated Cal: ${result.recipe.calories.toFixed(0)}</p>
-         <p class="item-info">Makronutrients:
-          <ul>
-           <li class="item-info-data">Carbohydrates: ${result.recipe.totalNutrients.CHOCDF.quantity.toFixed(1)}</li>
-           <li class="item-info-data">Proteins: ${result.recipe.totalNutrients.PROCNT.quantity.toFixed(1)}</li>
-           <li class="item-info-data">Fats: ${result.recipe.totalNutrients.FAT.quantity.toFixed(1)}</li>
-          </ul>
-         </p>
+          <p class="item-info">Makronutrients:
+           <ul>
+            <li class="item-info-data">Carbohydrates: ${result.recipe.totalNutrients.CHOCDF.quantity.toFixed(1)}</li>
+            <li class="item-info-data">Proteins: ${result.recipe.totalNutrients.PROCNT.quantity.toFixed(1)}</li>
+            <li class="item-info-data">Fats: ${result.recipe.totalNutrients.FAT.quantity.toFixed(1)}</li>
+           </ul>
+          </p>
+          <p class="item-info">Estimated Cal: ${result.recipe.calories.toFixed(0)}</p>
         </div>
         `
     })
