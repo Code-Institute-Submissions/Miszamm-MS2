@@ -31,6 +31,13 @@ function generateHTML(results){
              <a class="see-recipe" href="${result.recipe.url}" target="_blank">See Recipe</a>
           </div>
           <p class="item-info">Makronutrients:
+                <button id="modalBtn" class="button">View all</button>
+                <div id="macroModal" class="modal">
+                    <div class="modal-content">
+                        <span class="closeBtn">x</span>
+                        <p>detailed list of macros</p>
+                    </div>
+                </div>
            <ul>
             <li class="item-info-data">Carbohydrates: ${result.recipe.totalNutrients.CHOCDF.quantity.toFixed(1)}</li>
             <li class="item-info-data">Proteins: ${result.recipe.totalNutrients.PROCNT.quantity.toFixed(1)}</li>

@@ -11,7 +11,7 @@
 <body>
     <section>
      <div class="container intro">
-      <h1 class="name">Recipe/Makros App</h1>
+      <h1 class="name">Recipe/Macros App</h1>
        <form class="search-box"> 
          <input class="search-txt" type="text" name="" placeholder="Search for recipe...">
          <a class="search-btn" href="#">
@@ -19,14 +19,21 @@
          </a>
        </form>
       <div class="search-outcome">
-     <!-----
+     
          <div class="item">
             <img src="img/ms2-photo.jpg" alt="">
              <div class="flex-container">
               <h2 class="recipe-name">This is...</h2>
              <a class="see-recipe" href="#">See Recipe</a>
           </div>
-           <p class="item-info">Makronutrients:
+           <p class="item-info">Macronutrients:
+            <button id="modalBtn" class="button">View all</button>
+                <div id="macroModal" class="modal">
+                    <div class="modal-content">
+                        <span class="closeBtn">&times</span>
+                        <p>detailed list of macros</p>
+                    </div>
+                </div>
             <ul>
              <li class="item-info-data">Carbohydrates:</li>
              <li class="item-info-data">Proteins:</li>
@@ -35,7 +42,7 @@
            </p>
            <p class="item-info">Estimated Cal: </p>
         </div>     
-        ---------------------->
+        
       </div>
      </div>
 
