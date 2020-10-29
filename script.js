@@ -5,6 +5,9 @@ let searchQuery = '';
 const APP_ID = '72dfbd62';
 const APP_key = 'd0ec890c12b422a408b0562a3572d6d4';
 const baseURL = `https://api.edamam.com/search?q=cake&app_id=${APP_ID}&app_key=${APP_key}`;
+var modal = document.getElementById('macroModal');
+var modalBtn = document.getElementById('modalBtn');
+var closeBtn = document.getElementsByClassName('closeBtn')[0];
 
 searchForm.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -31,10 +34,10 @@ function generateHTML(results){
              <a class="see-recipe" href="${result.recipe.url}" target="_blank">See Recipe</a>
           </div>
           <p class="item-info">Makronutrients:
-                <button id="modalBtn" class="button">View all</button>
+           <button id="modalBtn" class="button">View all</button>
                 <div id="macroModal" class="modal">
                     <div class="modal-content">
-                        <span class="closeBtn">x</span>
+                        <span class="closeBtn">&times</span>
                         <p>detailed list of macros</p>
                     </div>
                 </div>
