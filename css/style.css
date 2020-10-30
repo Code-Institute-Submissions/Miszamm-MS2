@@ -173,7 +173,7 @@ section {
 }
 
 .modal {
-   
+    display: none;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -181,7 +181,7 @@ section {
     height: 100%;
     width: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 .modal-content {
     background-color: #D9EDE5;

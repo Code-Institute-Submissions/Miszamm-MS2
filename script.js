@@ -9,7 +9,12 @@ var modal = document.getElementById('macroModal');
 var modalBtn = document.getElementById('modalBtn');
 var closeBtn = document.getElementsByClassName('closeBtn')[0];
 
+
 searchForm.addEventListener('submit', (e) => {
+    let messages = []
+    if(searchForm.value === ''|| searchForm.value == null) {
+        messages.push('No data found')
+    }
     e.preventDefault();
     searchQuery = e.target.querySelector('input').value;
     fetchAPI();
@@ -22,6 +27,8 @@ const data = await response.json();
 generateHTML(data.hits);
 console.log(data);
 };
+
+
 function generateHTML(results){
     container.classList.remove('intro')
     let generatedHTML = '';
@@ -33,7 +40,10 @@ function generateHTML(results){
               <h2 class="recipe-name">${result.recipe.label}</h2>
              <a class="see-recipe" href="${result.recipe.url}" target="_blank">See Recipe</a>
           </div>
-          <p class="item-info">Makronutrients:
+          <p class="item-info">Allergens: ${result.recipe.healthLabels}</p>
+          <p class="item-info">Source: ${result.recipe.source}</p>
+          <p class="item-info">Estimated Cal: ${result.recipe.calories.toFixed(0)}</p>
+          <p class="item-info">Macronutrients:
            <button id="modalBtn" class="button">View all</button>
                 <div id="macroModal" class="modal">
                     <div class="modal-content">
@@ -47,7 +57,6 @@ function generateHTML(results){
             <li class="item-info-data">Fats: ${result.recipe.totalNutrients.FAT.quantity.toFixed(1)}</li>
            </ul>
           </p>
-          <p class="item-info">Estimated Cal: ${result.recipe.calories.toFixed(0)}</p>
         </div>
         `
     })
