@@ -5,6 +5,10 @@ let searchQuery = '';
 const APP_ID = '72dfbd62';
 const APP_key = 'd0ec890c12b422a408b0562a3572d6d4';
 const baseURL = `https://api.edamam.com/search?q=cake&app_id=${APP_ID}&app_key=${APP_key}`;
+var modal = document.getElementById('macroModal');
+var modalBtn = document.getElementById('modalBtn');
+var closeBtn = document.getElementsByClassName('closeBtn');
+
 
 
 
@@ -25,6 +29,7 @@ generateHTML(data.hits);
 console.log(data);
 }
 };
+
 
 function generateHTML(results){
     container.classList.remove('intro')
@@ -53,4 +58,9 @@ function generateHTML(results){
    searchOutcomeDiv.innerHTML = generatedHTML; 
 }
 
+
+modalBtn.addEventListener('click', openModal);
+function openModal(){
+    modal.style.display = 'block';
+}
 
