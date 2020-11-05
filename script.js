@@ -37,11 +37,11 @@ function generateHTML(results){
               <h2 class="recipe-name">${result.recipe.label}</h2>
              <a class="see-recipe" href="${result.recipe.url}" target="_blank">See Recipe</a>
           </div>
-          <p class="item-info">Allergens: ${result.recipe.healthLabels}</p>
+          <p class="item-info">Allergens: ${result.recipe.cautions}</p>
           <p class="item-info">Source: ${result.recipe.source}</p>
           <p class="item-info">Estimated Cal: ${result.recipe.calories.toFixed(0)}</p>
           <p class="item-info">Macronutrients:
-          <button type="button" class="btn btn-primary" onclick="saveData('${result.recipe.url}','${result.recipe.label}','${result.recipe.healthLabels}') ">Vie all</button>
+          <button type="button" class="btn btn-primary" onclick="saveData('${result.recipe.url}','${result.recipe.label}','${result.recipe.totalNutrients}') ">Vie all</button>
            <ul>
             <li class="item-info-data">Carbohydrates: ${result.recipe.totalNutrients.CHOCDF.quantity.toFixed(1)}</li>
             <li class="item-info-data">Proteins: ${result.recipe.totalNutrients.PROCNT.quantity.toFixed(1)}</li>
@@ -59,7 +59,7 @@ function saveData(recipeUrl, recipeName, Macronutrients){
     var data = {
         recipeurl: recipeUrl,
         recipename: recipeName,
-        macro: Macronutrients,
+        macro: Macronutrients
     }
 
     localStorage.setItem("recipe-url", JSON.stringify(data));
