@@ -5,11 +5,6 @@ let searchQuery = '';
 const APP_ID = '72dfbd62';
 const APP_key = 'd0ec890c12b422a408b0562a3572d6d4';
 const baseURL = `https://api.edamam.com/search?q=cake&app_id=${APP_ID}&app_key=${APP_key}`;
-var modal = document.getElementById('macroModal');
-var modalBtn = document.getElementById('modalBtn');
-var closeBtn = document.getElementsByClassName('closeBtn');
-
-
 
 
 searchForm.addEventListener('submit', (e) => {
@@ -46,6 +41,7 @@ function generateHTML(results){
           <p class="item-info">Source: ${result.recipe.source}</p>
           <p class="item-info">Estimated Cal: ${result.recipe.calories.toFixed(0)}</p>
           <p class="item-info">Macronutrients:
+          <button type="button" class="btn btn-primary" onclick="saveData('${result.recipe.url}','${result.recipe.label}','${result.recipe.healthLabels}') ">Vie all</button>
            <ul>
             <li class="item-info-data">Carbohydrates: ${result.recipe.totalNutrients.CHOCDF.quantity.toFixed(1)}</li>
             <li class="item-info-data">Proteins: ${result.recipe.totalNutrients.PROCNT.quantity.toFixed(1)}</li>
@@ -58,9 +54,14 @@ function generateHTML(results){
    searchOutcomeDiv.innerHTML = generatedHTML; 
 }
 
+function saveData(recipeUrl, recipeName, Macronutrients){
 
-modalBtn.addEventListener('click', openModal);
-function openModal(){
-    modal.style.display = 'block';
+    var data = {
+        recipeurl: recipeUrl,
+        recipename: recipeName,
+        macro: Macronutrients,
+    }
+
+    localStorage.setItem("recipe-url", JSON.stringify(data));
 }
 
