@@ -6,13 +6,14 @@
     <title>Document</title>
 </head>
 <body>
+<h2>Macro:</h2>
     <script>
         function fetchData(){
             var fetchData = localStorage.getItem("recipe-url")
             var decoded = JSON.parse(fetchData);
             console.log(decoded);
         }
-
+ 
         fetchData();
     
     </script>
