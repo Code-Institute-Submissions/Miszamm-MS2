@@ -93,6 +93,16 @@ section {
     background-color: transparent;
     color: #00303F;
 }
+.result-heading {
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #CAE4DB;
+    margin-top: 20px; 
+    padding-top: 30px;
+
+}
 
 .search-outcome {
      margin-top: 60px;

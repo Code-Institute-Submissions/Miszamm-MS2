@@ -8,7 +8,6 @@ const APP_ID = '72dfbd62';
 const APP_key = 'd0ec890c12b422a408b0562a3572d6d4';
 const baseURL = `https://api.edamam.com/search?q=cake&app_id=${APP_ID}&app_key=${APP_key}`;
 
-const title = searchForm.value;
 
 function searchMeal(e){
 e.preventDefault();  
@@ -25,15 +24,16 @@ searchForm.addEventListener('submit', searchMeal);
 async function fetchAPI(){
 const baseURL = `https://api.edamam.com/search?q=${searchQuery}&app_id=${APP_ID}&app_key=${APP_key}&to=40`;
 const response = await fetch(baseURL);
-const data = await response.json();
-if(data.hits.length === 0){
-    alert('No data found');
-}else{
+const data = await response.json();{
 generateHTML(data.hits);
 console.log(data);
-resultHeading.innerHTML = `<h2>Search result for '${title}'</h2>`;
+if(data.hits.length === 0){
+    resultHeading.innerHTML = `<p>There are no search results. Try again!</p>`;
 }
-};
+else{resultHeading.innerHTML = `<h2>Search result for '${searchQuery}'</h2>`;
+}
+}
+}
 
 
 function generateHTML(results){
@@ -42,9 +42,8 @@ function generateHTML(results){
     results.map(result => {
         generatedHTML +=
         `
-       
         <div class="item">
-            <img src="${result.recipe.image}" alt="">
+            <img src="${result.recipe.image}" alt="image">
              <div class="flex-container">
               <h2 class="recipe-name">${result.recipe.label}</h2>
              <a class="see-recipe" href="${result.recipe.url}" target="_blank">See Recipe</a>
@@ -55,9 +54,9 @@ function generateHTML(results){
              <p class="item-info">Macronutrients:
             <button type="button" class="btn btn-primary" onclick="saveData('${result.recipe.url}','${result.recipe.label}','${result.recipe.totalNutrients.quantity}') ">Vie all</button>
               <ul>
-               <li class="item-info-data">Carbohydrates: ${result.recipe.totalNutrients.CHOCDF.quantity.toFixed(1)}</li>
-               <li class="item-info-data">Proteins: ${result.recipe.totalNutrients.PROCNT.quantity.toFixed(1)}</li>
-               <li class="item-info-data">Fats: ${result.recipe.totalNutrients.FAT.quantity.toFixed(1)}</li>
+               <li class="item-info-data">Carbohydrates: ${result.recipe.totalNutrients.CHOCDF.quantity.toFixed(1)}g</li>
+               <li class="item-info-data">Proteins: ${result.recipe.totalNutrients.PROCNT.quantity.toFixed(1)}g</li>
+               <li class="item-info-data">Fats: ${result.recipe.totalNutrients.FAT.quantity.toFixed(1)}g</li>
               </ul>
              </p>
         </div>
@@ -76,4 +75,3 @@ function saveData(recipeUrl, recipeName, Macronutrients){
 
     localStorage.setItem("recipe-url", JSON.stringify(data));
 }
-
