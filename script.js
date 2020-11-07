@@ -1,19 +1,21 @@
 const searchForm = document.querySelector('form'),
   searchOutcomeDiv = document.querySelector('.search-outcome'),
-  container = document.querySelector('.container');
-  
+  container = document.querySelector('.container'),
+  resultHeading = document.querySelector('.result-heading');
       
 let searchQuery = '';
 const APP_ID = '72dfbd62';
 const APP_key = 'd0ec890c12b422a408b0562a3572d6d4';
 const baseURL = `https://api.edamam.com/search?q=cake&app_id=${APP_ID}&app_key=${APP_key}`;
 
+const title = searchForm.value;
 
 function searchMeal(e){
 e.preventDefault();  
 
 searchQuery = e.target.querySelector('input').value;
-fetchAPI();    
+fetchAPI(); 
+ 
 }
 
 searchForm.addEventListener('submit', searchMeal);
@@ -25,10 +27,11 @@ const baseURL = `https://api.edamam.com/search?q=${searchQuery}&app_id=${APP_ID}
 const response = await fetch(baseURL);
 const data = await response.json();
 if(data.hits.length === 0){
-    alert('No data found')
+    alert('No data found');
 }else{
 generateHTML(data.hits);
 console.log(data);
+resultHeading.innerHTML = `<h2>Search result for '${title}'</h2>`;
 }
 };
 
@@ -39,7 +42,7 @@ function generateHTML(results){
     results.map(result => {
         generatedHTML +=
         `
-       <div id="result-heading"><h2>Search results for</h2></div>
+       
         <div class="item">
             <img src="${result.recipe.image}" alt="">
              <div class="flex-container">
