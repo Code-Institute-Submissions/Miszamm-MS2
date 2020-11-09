@@ -52,7 +52,6 @@ function generateHTML(results){
              <p class="item-info">Source: ${result.recipe.source}</p>
              <p class="item-info">Estimated Cal: ${result.recipe.calories.toFixed(0)}</p>
              <p class="item-info">Macronutrients:
-            <button type="button" class="btn btn-primary" onclick="saveData('${result.recipe.url}','${result.recipe.label}','${result.recipe.totalNutrients.quantity}') ">Vie all</button>
               <ul>
                <li class="item-info-data">Carbohydrates: ${result.recipe.totalNutrients.CHOCDF.quantity.toFixed(1)}g</li>
                <li class="item-info-data">Proteins: ${result.recipe.totalNutrients.PROCNT.quantity.toFixed(1)}g</li>
@@ -65,13 +64,4 @@ function generateHTML(results){
    searchOutcomeDiv.innerHTML = generatedHTML; 
 }
 
-function saveData(recipeUrl, recipeName, Macronutrients){
 
-    var data = {
-        recipeurl: recipeUrl,
-        recipename: recipeName,
-        macro: Macronutrients
-    }
-
-    localStorage.setItem("recipe-url", JSON.stringify(data));
-}
