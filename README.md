@@ -10,11 +10,12 @@
 5. Visual Identity
 6. User Stories
 7. Testing
-8. Deployment
-9. Code Validation
-10. Technologies
-11. Media
-12. Acknowledgements and thanks
+8. Scalability
+9. Technologies
+10. Media
+11. Thanks to
+12. License
+
 # 1. Description
 
 *This is a Meal Finding APP*
@@ -107,18 +108,21 @@ The points below can be improved with a bit more optimization:
 - Leveraging browser caching
 - When I did this test, css/theme.css returned a 404 (Imispelled Theme.css)
 
-# Scalability
+# 8. Scalability
 
 Using a back-end programming language and database, I'd like to have a fully featured CMS which can be used by non-technical people to create, read, update and delete data easily.
 
 Also, I'd like franchise owners to have a private section where they can find resources and talk directly to our customer service representatives.
 
-# Technologies
-
-- [Bootstrap](https://getbootstrap.com/)
+# 9. Technologies
+- [HTML](https://html.com/)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [JavaScript](https://www.javascript.com/)
 - [jQuery](https://jquery.com/)
 
-# Media
+
+
+# 10. Media
 
 I have used different resources for images and my logo, I'll list all below:
 
@@ -126,8 +130,9 @@ I have used different resources for images and my logo, I'll list all below:
 - [Unsplash](https://unsplash.com) for all the images
 - [Font Awesome](https://fontawesome.com/6?next=%2Fstart) for the amazing icons used on this site
 - [Am I Responsive](http://ami.responsivedesign.is/) for the cool image in the UX section
+- [MDN Web Docs](https://developer.mozilla.org/en-US/)for technical suport
 
-# Thanks to
+# 11. Thanks to:
 - Gitpod Since I am typing this text through Gitpod. All code was created through Gitpod and the workspace for this project resides there.
 - GitHub which is used to host and deploy the project
 - Font awesome community for developing this great resource
@@ -141,11 +146,14 @@ I have used different resources for images and my logo, I'll list all below:
 - Traversy Media, Academind, and Dark Code for sharing their proffesional knowledge
 - Code Institute team: the other students on Slack
 - Last but not least my mentor Felipe Souza Alarcon for his constant support, and proffesional advice
-# License
+
+# 12. License
 
 This project is licensed under the [MIT](https://choosealicense.com/licenses/mit/) license.
 
-Copyright 2020 .
+MIT License
+
+Copyright (c) 2020 Michal Misza
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
