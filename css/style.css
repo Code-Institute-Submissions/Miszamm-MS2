@@ -22,7 +22,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 110px, 0;
+    padding: 110px 0;
     background-color: #00303F;
 }
 .logo {
@@ -38,7 +38,7 @@ section {
     width: 85%;
     height: auto;
     max-width: 1200px;
-    margin: 0, auto;
+    margin: 0 auto;
 }
 
 

@@ -1,7 +1,20 @@
 <p align="center">
   <img src="https://e2ad9287-0012-49f5-a7bf-b07442f37676.ws-eu01.gitpod.io/mini-browser/workspace/MS2/img/logoms2.png" alt="Meal finder logo"/>
 </p>
+<h1>Table of content:</h1>
 
+1. Introduction
+2. UX
+3. Wireframe
+4. Visual Identity
+5. Site Overview
+6. User Stories
+7. Testing
+8. Deployment
+9. Code Validation
+10. Technologies
+11. Media
+12. Acknowledgements and thanks
 # Description
 
 *This is a Meal Finding APP*
@@ -59,7 +72,7 @@ Food truck owners:
 
 # Testing
 
-Website has been tested using [GTmetrix](https://gtmetrix.com/reports/fandressouza.github.io/7xHu6MBv) and [BrowserStack](), see results below:
+Website has been tested using [GTmetrix](https://gtmetrix.com/reports/miszamm.github.io/6bZo7r2F) and [BrowserStack](), see results below:
 
 ![Website Speed Test Results](images/speed_test.png)
 
