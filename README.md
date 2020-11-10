@@ -30,7 +30,7 @@ I have opted to a simple and responsive design which is lightweight and has a lo
 - Services page: Services page contains a grid system with inner card elements
 - contact page: Contact page contains a contact form with a food truck PNG image on top
 
-![Responsive image with many different monitors](img2/responsive.jpeg)
+![Responsive image with many different monitors]()
 
 In order to improve user experience and website loading speed, I have compressed the images using [tinypng.com](https://tinypng.com/) and the reduction in image size has been 57%.
 
