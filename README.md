@@ -130,7 +130,7 @@ I have used different resources for images and my logo, I'll list all below:
 - [Unsplash](https://unsplash.com) for all the images
 - [Font Awesome](https://fontawesome.com/6?next=%2Fstart) for the amazing icons used on this site
 - [Am I Responsive](http://ami.responsivedesign.is/) for the cool image in the UX section
-- [MDN Web Docs](https://developer.mozilla.org/en-US/)for technical suport
+- [MDN Web Docs](https://developer.mozilla.org/en-US/) for technical suport
 
 # 11. Thanks to:
 - Gitpod Since I am typing this text through Gitpod. All code was created through Gitpod and the workspace for this project resides there.
