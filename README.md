@@ -88,8 +88,8 @@ Users:
 - As a user, I'd like to find meals from different parts of the world,
 - As a user, I'd like to get inspiration or new ideas for meal preping
 - As a user, I'd like to get dietary informations about products or meals
-- As a user, I'd like to find nutrition values of the food to improve  myperformance in sport
-- As a user, I'd like to get nutritional guidlines  
+- As a user, I'd like to find nutrition values of the food to improve performance in sport
+- As a user, I'd like to get nutritional guidlines for better quality of life 
 
 Meal Finder App owner:
 
