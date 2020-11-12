@@ -10,11 +10,10 @@
 5. Visual Identity
 6. User Stories
 7. Testing
-8. Scalability
+8. Features for futer implementation
 9. Technologies
 10. Media
-11. Thanks to
-12. License
+11. Thanks to:
 
 # 1. Description
 
@@ -51,19 +50,24 @@ The wireframe was designed using [Balsamiq](https://balsamiq.com/) and links to 
 
 - ![Wireframe Final Version](img2/balsamiq2.jpeg)
 
-# 4. UX
+# 4. UX/UI
 
 I have opted to a simple and responsive design which is lightweight and has a loading time of around 0.6 second.
 
 - Home Page with minimalistic design contains body with logo div, and main section, with single colour background, and picture of food 
   in the center off the viewport to contrast the background colour. Main Page is responsive despite the size of the device. Animated search form with button is located above the main photo. 
   Name of the app placed above search form as expected.
+
 - Once search form is filled in and button pressed, than main foto is removed and replaced with data recieved from Api, and search-outcome is 
   dispalay in the viewport by using css grid template to define grid columns and rows. 
+
 - API used comes from [EDAMAM](https://developer.edamam.com/) and contains in it's data base almost 2 milion recipes. 
   As a developer you are allow free access, with 5 requests form API per minute.
+
 - Displayd data contains an image of searched meal or ingriedient and additional dietary informations. 
+
 - For a full recipe and method user would be redirected to the original page by pressing a button "see recipe" located on the right side below the picture from generated HTML.
+
 - For better user experience if the data is not find, script.js will generate alert to retype search value.
 
 ![Responsive image with many different monitors](img2/responsive.jpeg)
@@ -74,7 +78,7 @@ In order to improve user experience and website loading speed, I have compressed
 
 # 5. Visual Identity
 
-- [Free Logo Design](http://freelogodesign.org) for the logo design and stationary
+- [Free Logo Design](http://freelogodesign.org) website was used for the logo design and stationary
 
 
 # 6. User Stories
@@ -84,7 +88,7 @@ Users:
 - As a user, I'd like to find meals from different parts of the world,
 - As a user, I'd like to get inspiration or new ideas for meal preping
 - As a user, I'd like to get dietary informations about products or meals
-- As a user, I'd like to find nutrition values of the food to improve  performance in sport
+- As a user, I'd like to find nutrition values of the food to improve  myperformance in sport
 - As a user, I'd like to get nutritional guidlines  
 
 Meal Finder App owner:
@@ -96,29 +100,52 @@ Meal Finder App owner:
 
 # 7. Testing
 
-Website has been tested using [GTmetrix](https://gtmetrix.com/reports/miszamm.github.io/6bZo7r2F) and [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmiszamm.github.io%2FMS2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css), see results below:
+This project has been tested throughout with use of preview, devtools, manual testing and also the website was deployed on github pages very early in development to allow 
+live testing after each commit was made.
+
+Website has been tested using [GTmetrix](https://gtmetrix.com/reports/miszamm.github.io/6bZo7r2F) and
+[W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmiszamm.github.io%2FMS2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css), 
+see results below:
 ![GTmetrix](img2/gt.jpeg)
 
 ![W3C CSS Validator](img2/w3c.jpeg)
 
+<h2>Java Script</h2>
 
-The points below can be improved with a bit more optimization:
+ All function's in Java Script were tested manually via console.log & dev tools through my IDE's Live preview. 
+On top of that further testing was done by pushing functions live to my deployed page to see if any issues appeared on the live version,
+or if any of the functions caused issues with each other. By combining above manual testing methods i was able to discover issues with "if" and "else" conditional statemnents,
+and major issues wiith fetching API during early stages  of development process.
 
-- Serving scaled images (some images are being resized in CSS e.g. logo.png)
-- Leveraging browser caching
-- When I did this test, css/theme.css returned a 404 (Imispelled Theme.css)
+<h2>Responsive Test</h2>
 
-# 8. Scalability
+For the responsive test i used an app called [Responsivley App](https://responsively.app/) which allowed me to view my website with multiple device sizes 
+(iPhone 5/5se 320px, iPhone X 375px, Ipad 768px, and a generic laptop size of 1280px) . Additionally responsivnes was also tested fully on Gitpod IDE previev option
+with use of devtools during whole development process, and also page deployd on github didn't show any issues with view ports listed below: (320px, 375px, 414px, 768px, 1024px, 1440px, 1920px)
 
-Using a back-end programming language and database, I'd like to have a fully featured CMS which can be used by non-technical people to create, read, update and delete data easily.
 
-Also, I'd like franchise owners to have a private section where they can find resources and talk directly to our customer service representatives.
+
+# 8. Features for future implementation
+
+If in the future I was to continue of development of this project, I would  definitely add: 
+
+- navbar 
+- modal to display all macronutrients 
+- additional page with login where you can create your favorite recipe data base 
+- additional function to sort meals for different groups for example: vegan, fish, low sugar etc.
+- add function to generate meals based on the list of ingridients
+- add api and function to generate weekly menu based on daly calorific requiremnts
+- contact info
+
+
 
 # 9. Technologies
 - [HTML](https://html.com/)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [JavaScript](https://www.javascript.com/)
 - [jQuery](https://jquery.com/)
+- [Font Awesome](https://www.google.com/search?q=font+awesome&oq=&sourceid=chrome&ie=UTF-8)
+- [Google Fonts](https://www.google.com/search?q=google+fonts&oq=google+fonts&aqs=chrome..69i57j35i39j0l6.5569j0j7&sourceid=chrome&ie=UTF-8)
 
 
 
@@ -147,16 +174,3 @@ I have used different resources for images and my logo, I'll list all below:
 - Code Institute team: the other students on Slack
 - Last but not least my mentor Felipe Souza Alarcon for his constant support, and proffesional advice
 
-# 12. License
-
-This project is licensed under the [MIT](https://choosealicense.com/licenses/mit/) license.
-
-MIT License
-
-Copyright (c) 2020 Michal Misza
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

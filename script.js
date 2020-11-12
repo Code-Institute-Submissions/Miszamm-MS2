@@ -46,16 +46,16 @@ function generateHTML(results){
             <img src="${result.recipe.image}" alt="image">
              <div class="flex-container">
               <h2 class="recipe-name">${result.recipe.label}</h2>
-             <a class="see-recipe" href="${result.recipe.url}" target="_blank">See Recipe</a>
-          </div>
-             <p class="item-info">Allergens: ${result.recipe.cautions}</p>
-             <p class="item-info">Source: ${result.recipe.source}</p>
-             <p class="item-info">Estimated Cal: ${result.recipe.calories.toFixed(0)}</p>
-             <p class="item-info">Macronutrients:
+               <a class="see-recipe" href="${result.recipe.url}" target="_blank">See Recipe</a>
+        </div>
+            <p class="item-info">Allergens: ${result.recipe.cautions}</p>
+            <p class="item-info">Source: ${result.recipe.source}</p>
+            <p class="item-info">Estimated Cal: ${result.recipe.calories.toFixed(0)}</p>
+            <p class="item-info">Macronutrients:
               <ul>
-               <li class="item-info-data">Carbohydrates: ${result.recipe.totalNutrients.CHOCDF.quantity.toFixed(1)}g</li>
-               <li class="item-info-data">Proteins: ${result.recipe.totalNutrients.PROCNT.quantity.toFixed(1)}g</li>
-               <li class="item-info-data">Fats: ${result.recipe.totalNutrients.FAT.quantity.toFixed(1)}g</li>
+                <li class="item-info-data">Carbohydrates: ${result.recipe.totalNutrients.CHOCDF.quantity.toFixed(1)}g</li>
+                <li class="item-info-data">Proteins: ${result.recipe.totalNutrients.PROCNT.quantity.toFixed(1)}g</li>
+                <li class="item-info-data">Fats: ${result.recipe.totalNutrients.FAT.quantity.toFixed(1)}g</li>
               </ul>
              </p>
         </div>
