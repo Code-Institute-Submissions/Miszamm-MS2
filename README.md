@@ -6,12 +6,12 @@
 1. Description
 2. Deployment and Demo
 3. Wireframe
-4. UX
+4. UX/UI
 5. Visual Identity
 6. User Stories
 7. Testing
 8. Features for futer implementation
-9. Technologies
+9. Technologies 
 10. Media
 11. Thanks to:
 
@@ -32,7 +32,7 @@ The process for deployment is documented below:
 
 Log into GitHub
 
-Access the page with the repository for this project (https://miszamm.github.io/MS2/)
+Access the page with the repository for this project [GitHub](https://miszamm.github.io/MS2/)
 
 Click on 'Settings' on the main menu over the file listing
 

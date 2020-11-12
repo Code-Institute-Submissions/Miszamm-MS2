@@ -59,8 +59,8 @@ function generateHTML(results){
               </ul>
              </p>
         </div>
-        `
-    })
+        `;
+    });
    searchOutcomeDiv.innerHTML = generatedHTML; 
 }
 
