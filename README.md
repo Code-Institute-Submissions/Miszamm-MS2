@@ -112,10 +112,16 @@ see results below:
 
 <h2>Java Script</h2>
 
- All function's in Java Script were tested manually via console.log & dev tools through my IDE's Live preview. 
+All function's in Java Script were tested manually via console.log & dev tools through my IDE's Live preview. 
 On top of that further testing was done by pushing functions live to my deployed page to see if any issues appeared on the live version,
 or if any of the functions caused issues with each other. By combining above manual testing methods i was able to discover issues with "if" and "else" conditional statemnents,
-and major issues wiith fetching API during early stages  of development process.
+and major issues wiith fetching API during early stages  of development process. In the last phase of development JavaScript code was tested with 
+[JSHINT](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiPyuWrxfvsAhXzThUIHQooDa4QFjAAegQIARAD&url=https%3A%2F%2Fjshint.com%2F&usg=AOvVaw02nxzQ6lFZ_w2Jgaj85bvT),
+see result below. I've got several warnings two of which were for missing semicolon and the rest for using ES6 and higher, this means that code will work on all browsers except Internet Explorer, which is acceptable.
+
+
+![JSHINT](img2/jshint.jpeg)
+
 
 <h2>Responsive Test</h2>
 
